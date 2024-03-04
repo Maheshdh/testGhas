@@ -61,6 +61,8 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
+
+    - name: Set java version
       uses: actions/setup-java@v3
       with:
         java-version: 16
